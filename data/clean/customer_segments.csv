@@ -1,0 +1,4 @@
+segment_id,segment_name,segment_category
+SEG-RETAIL-STD,Retail-Standard,retail
+SEG-RETAIL-PREM,Retail-Premium,retail
+SEG-SMB,Small-Business,small_business

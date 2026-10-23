@@ -1,0 +1,16 @@
+transaction_id,account_id,channel_id,rail_id,transaction_type,counterparty_type,amount,initiated_at,final_status,final_outcome_at,exception_reason
+TXN-00066687,ACCT-0013297,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,58.8,2026-04-19 18:25:21,success,2026-04-19 18:25:26,duplicate_transaction_id
+TXN-00153321,ACCT-0006271,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,155.77,2026-04-21 23:48:07,success,2026-04-21 23:48:12,duplicate_transaction_id
+TXN-00065782,ACCT-0007820,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,402.68,2026-05-11 11:53:59,success,2026-05-11 11:54:04,duplicate_transaction_id
+TXN-00129817,ACCT-0008375,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,35.01,2026-05-25 10:27:33,success,2026-05-25 10:27:38,duplicate_transaction_id
+TXN-00149587,ACCT-0006632,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,112.43,2026-04-13 15:48:00,success,2026-04-13 15:48:05,duplicate_transaction_id
+TXN-00063883,ACCT-0013114,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,23.08,2026-03-31 10:58:26,success,2026-03-31 10:58:31,duplicate_transaction_id
+TXN-00014368,ACCT-0006595,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,25.5,2026-06-06 14:39:38,success,2026-06-06 14:39:43,duplicate_transaction_id
+TXN-00084104,ACCT-0012542,CHN-WEB,RAIL-RTP,rtp_transfer,external_bank_account,33.86,2026-04-18 15:13:08,success,2026-04-18 15:13:13,duplicate_transaction_id
+TXN-00162924,ACCT-0011648,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,46.72,2026-05-31 11:47:45,success,2026-05-31 11:47:50,duplicate_transaction_id
+TXN-00142290,ACCT-0003785,CHN-WEB,RAIL-ACH,bill_pay,business_payee,110.4,2026-06-08 23:02:03,success,2026-06-08 23:02:08,duplicate_transaction_id
+TXN-00115177,ACCT-0002230,CHN-WEB,RAIL-ACH,bill_pay,business_payee,66.2,2026-05-01 08:28:16,success,2026-05-01 08:28:21,duplicate_transaction_id
+TXN-00032205,ACCT-0008512,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,55.29,2026-03-31 10:17:20,success,2026-03-31 10:17:25,duplicate_transaction_id
+TXN-00115817,ACCT-0004896,CHN-POSATM,RAIL-CARD,card_pos,business_payee,53.1,2026-03-30 15:53:09,success,2026-03-30 15:53:14,duplicate_transaction_id
+TXN-00126795,ACCT-0012421,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,9.0,2026-04-10 19:26:03,success,2026-04-10 19:26:08,duplicate_transaction_id
+TXN-00004754,ACCT-0004587,CHN-API,RAIL-ACH,bill_pay,business_payee,61.64,2026-05-23 14:14:36,success,2026-05-23 14:14:41,duplicate_transaction_id

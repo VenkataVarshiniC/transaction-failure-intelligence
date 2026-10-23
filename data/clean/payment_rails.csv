@@ -1,0 +1,5 @@
+rail_id,rail_name,rail_owner
+RAIL-CARD,card_network,external
+RAIL-ACH,ach,external
+RAIL-RTP,rtp,external
+RAIL-INTERNAL,internal_ledger,internal

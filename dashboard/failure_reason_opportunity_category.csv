@@ -1,0 +1,14 @@
+reason_code,opportunity_category
+ACCOUNT_RESTRICTED_DECLINE,Do Not Retry
+AUTH_FAILED,Immediate Recovery Candidate
+BALANCE_DECLINED_INSUFFICIENT_FUNDS,Customer Intervention
+BALANCE_DECLINED_STALE_READ,Immediate Recovery Candidate
+CLIENT_INIT_FAILURE,Do Not Retry
+PROCESSING_ERROR,Engineering Fix
+RAIL_DECLINED_ISSUER,Investigate
+RAIL_OUTAGE,Immediate Recovery Candidate
+RAIL_TIMEOUT,Immediate Recovery Candidate
+RISK_ENGINE_TIMEOUT,Immediate Recovery Candidate
+RISK_HELD,Investigate
+UNCLASSIFIED,Do Not Retry
+VALIDATION_FAILED,Do Not Retry

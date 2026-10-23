@@ -1,0 +1,6 @@
+scenario_id,scenario_name,value_recovered_or_avoided_usd,units_affected,unit_type,confidence,description
+A,No Action,0,0,transactions,Fact (baseline),Current failure and recovery behavior continues unchanged
+B,Automated Retry,146696.61,585,transactions,Medium,Moderate-case (40% rate) automated retry built for RAIL_DECLINED_ISSUER
+C,Customer Intervention,35478.21,144,transactions,Lower,Moderate-case (+10pp lift) proactive low-balance nudge for BALANCE_DECLINED_INSUFFICIENT_FUNDS
+D,Engineering Fix,80462.23,375,events,Highest,Applies the proven day-55 65.4% reduction rate to BALANCE_DECLINED_STALE_READ
+E,Combined Strategy,262637.05,1104,mixed,Mixed,Sum of B+C+D moderate cases; units_affected mixes transactions and events -- see whatif-simulation.md

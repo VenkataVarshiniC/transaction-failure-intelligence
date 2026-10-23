@@ -1,0 +1,9 @@
+account_id,customer_id,account_type,account_status,opened_date,exception_reason
+ACCT-0002045,CUST-9990000,savings,restricted,2022-04-13,orphan_customer_id
+ACCT-0002064,CUST-9990006,checking,active,2022-08-20,orphan_customer_id
+ACCT-0002224,CUST-9990003,checking,active,2023-10-10,orphan_customer_id
+ACCT-0006172,CUST-9990007,savings,active,2023-12-22,orphan_customer_id
+ACCT-0007263,CUST-9990004,checking,active,2023-11-10,orphan_customer_id
+ACCT-0009429,CUST-9990002,checking,active,2023-12-18,orphan_customer_id
+ACCT-0012082,CUST-9990001,business,active,2023-09-21,orphan_customer_id
+ACCT-0012470,CUST-9990005,savings,active,2023-02-22,orphan_customer_id

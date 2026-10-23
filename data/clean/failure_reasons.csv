@@ -1,0 +1,14 @@
+failure_reason_id,reason_code,reason_description,lifecycle_stage,failure_category,origin,default_recovery_track
+FR-01,CLIENT_INIT_FAILURE,Client-side app/network failure before request reached backend,1.0,Technology,internal,Not Applicable
+FR-02,AUTH_FAILED,Authentication/session failure at transaction time,2.0,Technology,internal,Auto-Retry
+FR-03,VALIDATION_FAILED,Invalid or malformed transaction request,3.0,Process,internal,Not Applicable
+FR-04,RISK_HELD,Transaction held by risk/fraud screening pending review,4.0,Risk,internal,Do Not Retry-Monitor
+FR-05,RISK_ENGINE_TIMEOUT,Risk engine failed to respond within SLA,4.0,Technology,internal,Auto-Retry
+FR-06,BALANCE_DECLINED_INSUFFICIENT_FUNDS,Insufficient funds in source account,5.0,Process,internal,Customer Intervention
+FR-07,BALANCE_DECLINED_STALE_READ,Balance check used a stale/out-of-date read,5.0,Technology,internal,Auto-Retry
+FR-08,ACCOUNT_RESTRICTED_DECLINE,Source account is restricted or frozen,5.0,Policy,internal,Do Not Retry-Monitor
+FR-09,PROCESSING_ERROR,Internal orchestration/routing error before rail submission,6.0,Technology,internal,Engineering Fix
+FR-10,RAIL_DECLINED_ISSUER,Counterparty issuer/bank declined the transaction,7.0,External Dependency,external,Do Not Retry-Monitor
+FR-11,RAIL_TIMEOUT,External payment rail did not respond within timeout,7.0,External Dependency,external,Auto-Retry
+FR-12,RAIL_OUTAGE,External payment rail reported a service outage,7.0,External Dependency,external,Do Not Retry-Monitor
+FR-00,UNCLASSIFIED,Referenced a failure_reason_id not present in the standard taxonomy at extract time,,Unclassified,unknown,Not Applicable

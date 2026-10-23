@@ -1,0 +1,7 @@
+recovery_attempt_id,transaction_id,triggering_event_id,recovery_track,attempt_number,initiated_at,completed_at,outcome,exception_reason
+REC-000193,TXN-00004681,EVT-999990001,Do Not Retry-Monitor,1,2026-04-02 22:07:05,2026-04-03 15:07:05,still_failed,orphan_triggering_event_id
+REC-003061,TXN-00070662,EVT-999990005,Customer Intervention,1,2026-04-02 16:13:30,2026-04-04 01:13:30,recovered,orphan_triggering_event_id
+REC-003793,TXN-00088163,EVT-999990002,Auto-Retry,1,2026-05-07 22:11:58,2026-05-07 22:12:07,recovered,orphan_triggering_event_id
+REC-003875,TXN-00090653,EVT-999990000,Do Not Retry-Monitor,1,2026-04-10 14:03:45,2026-04-11 07:03:45,still_failed,orphan_triggering_event_id
+REC-004387,TXN-00102553,EVT-999990003,Do Not Retry-Monitor,1,2026-05-11 16:50:31,2026-05-12 04:50:31,recovered,orphan_triggering_event_id
+REC-004882,TXN-00114609,EVT-999990004,Customer Intervention,1,2026-04-09 00:33:02,2026-04-10 04:33:02,still_failed,orphan_triggering_event_id

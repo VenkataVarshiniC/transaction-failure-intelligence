@@ -1,0 +1,5 @@
+channel_id,channel_name
+CHN-MOBILE,mobile_app
+CHN-WEB,web
+CHN-POSATM,pos_atm
+CHN-API,api
