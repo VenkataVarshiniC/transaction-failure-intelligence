@@ -268,8 +268,8 @@ cohorts.*
 
 ```
      hour_bucket  rtp_txn_count  rail_timeout_or_outage_count  rate_pct
-     other_hours          12094                          87.0      0.72
 midday_afternoon           7070                          49.0      0.69
+     other_hours          12094                          87.0      0.72
 ```
 
 
@@ -443,20 +443,20 @@ CUST-0000058             14                    1
 CUST-0002378             12                    2
 CUST-0002081             10                    3
 CUST-0002660             10                    3
-CUST-0009471             10                    3
-CUST-0004003             10                    3
-CUST-0006319             10                    3
-CUST-0003726             10                    3
-CUST-0005670             10                    3
-CUST-0010587             10                    3
-CUST-0002799             10                    3
 CUST-0002716             10                    3
-CUST-0003274              9                   13
-CUST-0011500              9                   13
+CUST-0002799             10                    3
+CUST-0003726             10                    3
+CUST-0004003             10                    3
+CUST-0005670             10                    3
+CUST-0006319             10                    3
+CUST-0009471             10                    3
+CUST-0010587             10                    3
 CUST-0002887              9                   13
-CUST-0005063              9                   13
+CUST-0003274              9                   13
 CUST-0004308              9                   13
+CUST-0005063              9                   13
 CUST-0006034              9                   13
+CUST-0011500              9                   13
 ```
 
 
@@ -822,8 +822,8 @@ reason), then conditional aggregation.*
 
 ```
          reason_code  still_unrecovered_txn_count  still_unrecovered_value  already_recovered_txn_count  already_recovered_value
-           RISK_HELD                         1204                499604.76                          830                225815.47
 RAIL_DECLINED_ISSUER                         1462                366741.52                            0                     0.00
+           RISK_HELD                         1204                499604.76                          830                225815.47
 ```
 
 

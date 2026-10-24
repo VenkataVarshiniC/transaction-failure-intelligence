@@ -4,16 +4,16 @@ SQL scripts run against real tables. Run with: python3 load_database.py
 """
 
 import duckdb
-import os
+from pathlib import Path
 
-DATA_DIR = "/home/claude/bank-transaction-failure-intelligence/data"
-DB_PATH = "/home/claude/bank-transaction-failure-intelligence/sql/kestrel.duckdb"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
+DB_PATH = PROJECT_ROOT / "sql" / "kestrel.duckdb"
 
-os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
-if os.path.exists(DB_PATH):
-    os.remove(DB_PATH)
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+DB_PATH.unlink(missing_ok=True)
 
-con = duckdb.connect(DB_PATH)
+con = duckdb.connect(str(DB_PATH))
 
 TABLES = {
     "customer_segments": "clean/customer_segments.csv",
@@ -33,15 +33,16 @@ TABLES = {
 }
 
 for table, relpath in TABLES.items():
-    con.execute(f"CREATE TABLE {table} AS SELECT * FROM read_csv_auto('{DATA_DIR}/{relpath}', header=True)")
+    csv_path = (DATA_DIR / relpath).as_posix()
+    con.execute(f"CREATE TABLE {table} AS SELECT * FROM read_csv_auto('{csv_path}', header=True)")
     n = con.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
     print(f"Loaded {table}: {n} rows")
 
 # also load the RAW (pre-clean) transactions/events for the 01_data_quality.sql script
-con.execute(f"CREATE TABLE raw_transactions AS SELECT * FROM read_csv_auto('{DATA_DIR}/transactions.csv', header=True)")
-con.execute(f"CREATE TABLE raw_transaction_events AS SELECT * FROM read_csv_auto('{DATA_DIR}/transaction_events.csv', header=True)")
-con.execute(f"CREATE TABLE raw_accounts AS SELECT * FROM read_csv_auto('{DATA_DIR}/accounts.csv', header=True)")
-con.execute(f"CREATE TABLE raw_recovery_attempts AS SELECT * FROM read_csv_auto('{DATA_DIR}/recovery_attempts.csv', header=True)")
+con.execute(f"CREATE TABLE raw_transactions AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'transactions.csv').as_posix()}', header=True)")
+con.execute(f"CREATE TABLE raw_transaction_events AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'transaction_events.csv').as_posix()}', header=True)")
+con.execute(f"CREATE TABLE raw_accounts AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'accounts.csv').as_posix()}', header=True)")
+con.execute(f"CREATE TABLE raw_recovery_attempts AS SELECT * FROM read_csv_auto('{(DATA_DIR / 'recovery_attempts.csv').as_posix()}', header=True)")
 print("Loaded raw_* tables for data-quality re-verification")
 
 con.close()

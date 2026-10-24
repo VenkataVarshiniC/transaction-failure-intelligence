@@ -9,10 +9,12 @@ separable. Run with: python3 inject_data_quality_issues.py
 
 import numpy as np
 import pandas as pd
+from pathlib import Path
 
 SEED = 2026
 rng = np.random.default_rng(SEED)
-DATA_DIR = "/home/claude/bank-transaction-failure-intelligence/data"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
 
 txn = pd.read_csv(f"{DATA_DIR}/transactions.csv")
 acct = pd.read_csv(f"{DATA_DIR}/accounts.csv")
@@ -34,7 +36,9 @@ txn = pd.concat([txn, txn.loc[dup_idx]], ignore_index=True)
 bad_amount_idx = rng.choice(txn.index, size=20, replace=False)
 half = len(bad_amount_idx) // 2
 txn.loc[bad_amount_idx[:half], "amount"] = 0.0
-txn.loc[bad_amount_idx[half:], "amount"] = -rng.uniform(1, 500, size=len(bad_amount_idx) - half)
+txn.loc[bad_amount_idx[half:], "amount"] = -np.round(
+    rng.uniform(1, 500, size=len(bad_amount_idx) - half), 2
+)
 
 # 3. Missing amounts
 missing_amount_idx = rng.choice(txn.index.difference(bad_amount_idx), size=25, replace=False)

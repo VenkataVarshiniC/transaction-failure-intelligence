@@ -28,7 +28,7 @@ scripts/               All Python that produced the above, in run order:
                          run_sql_analysis.py          Phase 10: runs every
                                                        sql/*.sql query for real
                                                        and writes query-results.md
-sql/                    Phase 10 + 12 + 13: 10 .sql files (39 business
+sql/                    Phase 10 + 12 + 13: 10 .sql files (36 business
                        questions total) plus query-results.md — real
                        captured output, nothing hand-typed. (kestrel.duckdb
                        itself is not distributed in delivered zips to keep
@@ -48,7 +48,7 @@ screenshots/            Placeholder for Power BI screenshots once built
 1. **Install Python 3.10+** if you don't have it (`python3 --version` to check).
 
 2. **Open the folder in VS Code**: `File → Open Folder…` → select the
-   unzipped `bank-transaction-failure-intelligence` folder. Install the
+   unzipped `transaction-failure-intelligence` folder. Install the
    Microsoft **Python** extension if prompted.
 
 3. **Create and activate a virtual environment** (Terminal → New Terminal
@@ -65,11 +65,12 @@ screenshots/            Placeholder for Power BI screenshots once built
    ```bash
    pip install -r requirements.txt
    ```
+   For the exact environment verified for this repository, use
+   `pip install -r requirements.lock.txt` instead.
 
 5. **Rebuild the DuckDB database**:
    ```bash
-   cd scripts
-   python3 load_database.py
+   python scripts/load_database.py
    ```
    This creates `sql/kestrel.duckdb` with 9 clean tables, 5 exception
    tables, and 4 raw tables, matching the row counts in
@@ -79,7 +80,7 @@ screenshots/            Placeholder for Power BI screenshots once built
    has the captured output, but you can regenerate it or explore the
    queries yourself):
    ```bash
-   python3 run_sql_analysis.py
+   python scripts/run_sql_analysis.py
    ```
    Or open `sql/kestrel.duckdb` directly with the VS Code **SQLTools**
    extension (with the SQLite/DuckDB driver) or the `duckdb` CLI
@@ -88,9 +89,10 @@ screenshots/            Placeholder for Power BI screenshots once built
 
 7. **Regenerating the dataset from scratch** (not needed to continue the
    project — `data/` already has the output — but useful if you want to
-   see the generation logic run): `python3 generate_dataset.py`, then
-   `inject_data_quality_issues.py`, then `data_quality_checks.py`, then
-   `clean_dataset.py`, in that order, from inside `scripts/`. All use a
+   see the generation logic run): `python scripts/generate_dataset.py`, then
+   `python scripts/inject_data_quality_issues.py`, then
+   `python scripts/data_quality_checks.py`, then
+   `python scripts/clean_dataset.py`, in that order, from the project root. All use a
    fixed random seed, so re-running reproduces the same numbers documented
    in `data/dataset-design.md` and `data/data-quality-report.md`.
 

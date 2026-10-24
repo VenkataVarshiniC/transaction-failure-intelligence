@@ -1,0 +1,9 @@
+.venv/
+venv/
+.tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+sql/*.duckdb
+.DS_Store
+Thumbs.db

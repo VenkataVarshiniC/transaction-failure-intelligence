@@ -2310,7 +2310,7 @@ TXN-00002307,ACCT-0001374,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer
 TXN-00002308,ACCT-0007142,CHN-POSATM,RAIL-INTERNAL,p2p,internal_kestrel_customer,15.42,2026-03-17 17:31:13,permanently_failed,2026-03-17 17:34:13,True,permanently_failed,True,True
 TXN-00002309,ACCT-0002066,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,5.72,2026-04-22 12:35:49,success,2026-04-22 12:35:54,True,success,True,True
 TXN-00002310,ACCT-0012112,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,122.33,2026-06-12 19:44:13,success,2026-06-12 19:44:18,True,success,True,True
-TXN-00002311,ACCT-0003546,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,-131.5149701095882,2026-04-14 18:28:45,success,2026-04-14 18:28:50,False,success,True,True
+TXN-00002311,ACCT-0003546,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,-131.51,2026-04-14 18:28:45,success,2026-04-14 18:28:50,False,success,True,True
 TXN-00002312,ACCT-0005891,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,19.69,2026-03-23 18:55:08,success,2026-03-23 18:55:13,True,success,True,True
 TXN-00002313,ACCT-0003860,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,10.58,2026-05-02 14:12:42,success,2026-05-02 14:12:47,True,success,True,True
 TXN-00002314,ACCT-0013760,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,30.05,2026-04-15 19:13:43,success,2026-04-15 19:13:48,True,success,True,True
@@ -28302,7 +28302,7 @@ TXN-00028299,ACCT-0008931,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer
 TXN-00028300,ACCT-0014964,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,15.96,2026-05-07 16:18:55,success,2026-05-07 16:19:00,True,success,True,True
 TXN-00028301,ACCT-0012825,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,162.69,2026-03-19 09:49:53,recovered_success,2026-03-19 09:50:17,True,recovered_success,True,True
 TXN-00028302,ACCT-0002329,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,138.65,2026-04-15 16:56:56,success,2026-04-15 16:57:01,True,success,True,True
-TXN-00028303,ACCT-0014906,CHN-WEB,RAIL-ACH,wire,external_bank_account,-450.3243499031068,2026-06-09 11:53:29,success,2026-06-09 11:53:34,False,success,True,True
+TXN-00028303,ACCT-0014906,CHN-WEB,RAIL-ACH,wire,external_bank_account,-450.32,2026-06-09 11:53:29,success,2026-06-09 11:53:34,False,success,True,True
 TXN-00028304,ACCT-0014539,CHN-MOBILE,RAIL-RTP,rtp_transfer,external_bank_account,153.04,2026-03-16 21:46:10,success,2026-03-16 21:46:15,True,success,True,True
 TXN-00028305,ACCT-0012406,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,16.08,2026-03-30 05:17:30,success,2026-03-30 05:17:35,True,success,True,True
 TXN-00028306,ACCT-0004667,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,76.96,2026-03-16 19:32:28,success,2026-03-16 19:32:33,True,success,True,True
@@ -50021,7 +50021,7 @@ TXN-00050018,ACCT-0004385,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer
 TXN-00050019,ACCT-0011644,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,366.31,2026-04-02 12:47:16,success,2026-04-02 12:47:21,True,success,True,True
 TXN-00050020,ACCT-0011828,CHN-POSATM,RAIL-INTERNAL,p2p,internal_kestrel_customer,29.4,2026-05-15 23:51:01,success,2026-05-15 23:51:06,True,success,True,True
 TXN-00050021,ACCT-0000542,CHN-WEB,RAIL-INTERNAL,p2p,internal_kestrel_customer,55.18,2026-04-05 23:20:19,success,2026-04-05 23:20:24,True,success,True,True
-TXN-00050022,ACCT-0006944,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,-350.71960386092684,2026-05-23 22:51:00,success,2026-05-23 22:51:05,False,success,True,True
+TXN-00050022,ACCT-0006944,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,-350.72,2026-05-23 22:51:00,success,2026-05-23 22:51:05,False,success,True,True
 TXN-00050023,ACCT-0013450,CHN-API,RAIL-ACH,external_transfer,external_bank_account,103.4,2026-05-20 19:56:37,success,2026-05-20 19:56:42,True,success,True,True
 TXN-00050024,ACCT-0013849,CHN-API,RAIL-CARD,card_pos,business_payee,43.72,2026-05-14 13:42:21,success,2026-05-14 13:42:26,True,success,True,True
 TXN-00050025,ACCT-0003569,CHN-MOBILE,RAIL-RTP,rtp_transfer,external_bank_account,32.93,2026-04-15 09:40:48,success,2026-04-15 09:40:53,True,success,True,True
@@ -60985,7 +60985,7 @@ TXN-00060982,ACCT-0002436,CHN-WEB,RAIL-CARD,card_pos,business_payee,1.46,2026-06
 TXN-00060983,ACCT-0009901,CHN-API,RAIL-ACH,wire,external_bank_account,2574.21,2026-06-06 14:26:37,success,2026-06-06 14:26:42,True,success,True,True
 TXN-00060984,ACCT-0014581,CHN-WEB,RAIL-INTERNAL,p2p,internal_kestrel_customer,48.5,2026-05-27 10:55:39,success,2026-05-27 10:55:44,True,success,True,True
 TXN-00060985,ACCT-0006793,CHN-WEB,RAIL-INTERNAL,p2p,internal_kestrel_customer,38.08,2026-05-12 15:32:28,success,2026-05-12 15:32:33,True,success,True,True
-TXN-00060986,ACCT-0013706,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,-157.59634330392268,2026-06-04 21:33:05,success,2026-06-04 21:33:10,False,success,True,True
+TXN-00060986,ACCT-0013706,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,-157.6,2026-06-04 21:33:05,success,2026-06-04 21:33:10,False,success,True,True
 TXN-00060987,ACCT-0005633,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,96.33,2026-05-28 19:33:47,success,2026-05-28 19:33:52,True,success,True,True
 TXN-00060988,ACCT-0013445,CHN-API,RAIL-CARD,card_pos,business_payee,19.24,2026-05-06 14:21:12,success,2026-05-06 14:21:17,True,success,True,True
 TXN-00060989,ACCT-0007647,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,49.91,2026-04-24 16:06:37,success,2026-04-24 16:06:42,True,success,True,True
@@ -77567,7 +77567,7 @@ TXN-00077564,ACCT-0003785,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,118.23,202
 TXN-00077565,ACCT-0002088,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,72.11,2026-05-29 14:12:12,success,2026-05-29 14:12:17,True,success,True,True
 TXN-00077566,ACCT-0010957,CHN-MOBILE,RAIL-RTP,rtp_transfer,external_bank_account,181.02,2026-05-17 06:39:49,success,2026-05-17 06:39:54,True,success,True,True
 TXN-00077567,ACCT-0010658,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,12.37,2026-04-24 14:09:04,success,2026-04-24 14:09:09,True,success,True,True
-TXN-00077568,ACCT-0005872,CHN-API,RAIL-ACH,bill_pay,business_payee,-173.2051887549788,2026-05-20 14:29:42,success,2026-05-20 14:29:47,False,success,True,True
+TXN-00077568,ACCT-0005872,CHN-API,RAIL-ACH,bill_pay,business_payee,-173.21,2026-05-20 14:29:42,success,2026-05-20 14:29:47,False,success,True,True
 TXN-00077569,ACCT-0001543,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,26.27,2026-04-05 12:00:42,success,2026-04-05 12:00:47,True,success,True,True
 TXN-00077570,ACCT-0000121,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,9.78,2026-04-15 11:48:27,success,2026-04-15 11:48:32,True,success,True,True
 TXN-00077571,ACCT-0006078,CHN-API,RAIL-ACH,external_transfer,external_bank_account,667.49,2026-05-09 19:21:30,success,2026-05-09 19:21:35,True,success,True,True
@@ -80707,7 +80707,7 @@ TXN-00080704,ACCT-0009753,CHN-WEB,RAIL-ACH,bill_pay,business_payee,252.69,2026-0
 TXN-00080705,ACCT-0004387,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,25.26,2026-04-11 11:20:24,success,2026-04-11 11:20:29,True,success,True,True
 TXN-00080706,ACCT-0002166,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,11.73,2026-05-24 16:37:14,success,2026-05-24 16:37:19,True,success,True,True
 TXN-00080707,ACCT-0000955,CHN-WEB,RAIL-ACH,wire,external_bank_account,745.58,2026-05-30 18:58:43,success,2026-05-30 18:58:48,True,success,True,True
-TXN-00080708,ACCT-0011525,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,-282.12530987677025,2026-05-04 20:16:45,success,2026-05-04 20:16:50,False,success,True,True
+TXN-00080708,ACCT-0011525,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,-282.13,2026-05-04 20:16:45,success,2026-05-04 20:16:50,False,success,True,True
 TXN-00080709,ACCT-0004032,CHN-API,RAIL-ACH,external_transfer,external_bank_account,593.52,2026-06-02 20:43:11,recovered_success,2026-06-03 10:43:16,True,recovered_success,True,True
 TXN-00080710,ACCT-0007064,CHN-API,RAIL-ACH,bill_pay,business_payee,159.15,2026-04-07 13:17:19,success,2026-04-07 13:17:24,True,success,True,True
 TXN-00080711,ACCT-0004381,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,3.54,2026-04-01 14:21:45,success,2026-04-01 14:21:50,True,success,True,True
@@ -82823,7 +82823,7 @@ TXN-00082820,ACCT-0009995,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,10.99,202
 TXN-00082821,ACCT-0013846,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,34.25,2026-05-07 08:51:14,success,2026-05-07 08:51:19,True,success,True,True
 TXN-00082822,ACCT-0014051,CHN-POSATM,RAIL-CARD,card_pos,business_payee,16.04,2026-04-13 14:18:57,success,2026-04-13 14:19:02,True,success,True,True
 TXN-00082823,ACCT-0006616,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,203.02,2026-04-11 01:33:51,success,2026-04-11 01:33:56,True,success,True,True
-TXN-00082824,ACCT-0006603,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,-473.4630756988445,2026-06-05 09:19:34,success,2026-06-05 09:19:39,False,success,True,True
+TXN-00082824,ACCT-0006603,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,-473.46,2026-06-05 09:19:34,success,2026-06-05 09:19:39,False,success,True,True
 TXN-00082825,ACCT-0001738,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,34.05,2026-05-18 09:08:10,success,2026-05-18 09:08:15,True,success,True,True
 TXN-00082826,ACCT-0012913,CHN-POSATM,RAIL-ACH,external_transfer,external_bank_account,67.35,2026-04-04 14:17:07,success,2026-04-04 14:17:12,True,success,True,True
 TXN-00082827,ACCT-0014103,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,128.06,2026-03-31 12:05:20,success,2026-03-31 12:05:25,True,success,True,True
@@ -83853,7 +83853,7 @@ TXN-00083850,ACCT-0012943,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,17.67,202
 TXN-00083851,ACCT-0015307,CHN-POSATM,RAIL-ACH,payroll,business_payee,1539.77,2026-04-04 15:59:55,recovered_success,2026-04-04 16:00:35,True,recovered_success,True,True
 TXN-00083852,ACCT-0006096,CHN-MOBILE,RAIL-CARD,card_pos,business_payee,23.42,2026-04-05 17:59:04,success,2026-04-05 17:59:09,True,success,True,True
 TXN-00083853,ACCT-0008156,CHN-MOBILE,RAIL-ACH,external_transfer,external_bank_account,2435.24,2026-05-16 17:08:51,success,2026-05-16 17:08:56,True,success,True,True
-TXN-00083854,ACCT-0003858,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,-216.94860707035608,2026-05-01 18:49:08,success,2026-05-01 18:49:13,False,success,True,True
+TXN-00083854,ACCT-0003858,CHN-WEB,RAIL-ACH,external_transfer,external_bank_account,-216.95,2026-05-01 18:49:08,success,2026-05-01 18:49:13,False,success,True,True
 TXN-00083855,ACCT-0000000,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,28.99,2026-03-18 21:41:46,success,2026-03-18 21:41:51,True,success,True,True
 TXN-00083856,ACCT-0009334,CHN-WEB,RAIL-ACH,bill_pay,business_payee,53.04,2026-06-06 14:55:59,success,2026-06-06 14:56:04,True,success,True,True
 TXN-00083857,ACCT-0000259,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,53.48,2026-04-05 06:49:24,success,2026-04-05 06:49:29,True,success,True,True
@@ -118093,7 +118093,7 @@ TXN-00118090,ACCT-0002545,CHN-POSATM,RAIL-INTERNAL,p2p,internal_kestrel_customer
 TXN-00118091,ACCT-0006298,CHN-POSATM,RAIL-RTP,rtp_transfer,external_bank_account,138.0,2026-03-30 18:25:13,success,2026-03-30 18:25:18,True,success,True,True
 TXN-00118092,ACCT-0014794,CHN-MOBILE,RAIL-RTP,rtp_transfer,external_bank_account,196.33,2026-05-04 18:09:07,success,2026-05-04 18:09:12,True,success,True,True
 TXN-00118093,ACCT-0006777,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,169.58,2026-03-23 12:24:42,success,2026-03-23 12:24:47,True,success,True,True
-TXN-00118094,ACCT-0009670,CHN-WEB,RAIL-ACH,bill_pay,business_payee,-160.35156014702935,2026-05-09 09:00:12,success,2026-05-09 09:00:17,False,success,True,True
+TXN-00118094,ACCT-0009670,CHN-WEB,RAIL-ACH,bill_pay,business_payee,-160.35,2026-05-09 09:00:12,success,2026-05-09 09:00:17,False,success,True,True
 TXN-00118095,ACCT-0014402,CHN-POSATM,RAIL-ACH,bill_pay,business_payee,59.04,2026-05-10 12:53:08,success,2026-05-10 12:53:13,True,success,True,True
 TXN-00118096,ACCT-0002587,CHN-WEB,RAIL-CARD,card_pos,business_payee,7.67,2026-04-11 06:11:42,success,2026-04-11 06:11:47,True,success,True,True
 TXN-00118097,ACCT-0012695,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,67.25,2026-05-29 18:05:11,success,2026-05-29 18:05:16,True,success,True,True
@@ -148658,7 +148658,7 @@ TXN-00148655,ACCT-0005800,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer
 TXN-00148656,ACCT-0013470,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,25.11,2026-05-24 07:56:49,success,2026-05-24 07:56:54,True,success,True,True
 TXN-00148657,ACCT-0014480,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,228.31,2026-05-10 17:24:16,success,2026-05-10 17:24:21,True,success,True,True
 TXN-00148658,ACCT-0000296,CHN-MOBILE,RAIL-RTP,rtp_transfer,external_bank_account,210.69,2026-04-23 17:27:04,success,2026-04-23 17:27:09,True,success,True,True
-TXN-00148659,ACCT-0004247,CHN-WEB,RAIL-INTERNAL,p2p,internal_kestrel_customer,-348.3014401967579,2026-06-12 16:49:23,recovered_success,2026-06-12 16:49:54,False,recovered_success,True,True
+TXN-00148659,ACCT-0004247,CHN-WEB,RAIL-INTERNAL,p2p,internal_kestrel_customer,-348.3,2026-06-12 16:49:23,recovered_success,2026-06-12 16:49:54,False,recovered_success,True,True
 TXN-00148660,ACCT-0008010,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,54.82,2026-04-07 13:08:23,permanently_failed,2026-04-07 13:11:23,True,permanently_failed,True,True
 TXN-00148661,ACCT-0013528,CHN-MOBILE,RAIL-ACH,bill_pay,business_payee,158.92,2026-05-02 11:17:07,success,2026-05-02 11:17:12,True,success,True,True
 TXN-00148662,ACCT-0011653,CHN-MOBILE,RAIL-INTERNAL,p2p,internal_kestrel_customer,17.6,2026-04-30 17:40:51,success,2026-04-30 17:40:56,True,success,True,True

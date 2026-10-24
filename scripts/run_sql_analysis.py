@@ -6,15 +6,15 @@ skipping comment-only fragments. Run with: python3 run_sql_analysis.py
 """
 
 import duckdb
-import glob
-import os
 import re
+from pathlib import Path
 
-DB_PATH = "/home/claude/bank-transaction-failure-intelligence/sql/kestrel.duckdb"
-SQL_DIR = "/home/claude/bank-transaction-failure-intelligence/sql"
-OUT_PATH = f"{SQL_DIR}/query-results.md"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+SQL_DIR = PROJECT_ROOT / "sql"
+DB_PATH = SQL_DIR / "kestrel.duckdb"
+OUT_PATH = SQL_DIR / "query-results.md"
 
-con = duckdb.connect(DB_PATH, read_only=True)
+con = duckdb.connect(str(DB_PATH), read_only=True)
 
 def split_statements(text):
     # split on semicolons that end a statement; keep the preceding comment
@@ -35,11 +35,10 @@ def extract_label(stmt):
     return m.group(1).strip() if m else "Query"
 
 report_lines = []
-files = sorted(glob.glob(f"{SQL_DIR}/*.sql"))
+files = sorted(SQL_DIR.glob("*.sql"))
 for f in files:
-    fname = os.path.basename(f)
-    with open(f) as fh:
-        text = fh.read()
+    fname = f.name
+    text = f.read_text(encoding="utf-8")
     report_lines.append(f"\n## `{fname}`\n")
     statements = split_statements(text)
     for i, stmt in enumerate(statements, 1):
@@ -58,11 +57,13 @@ for f in files:
             report_lines.append(f"**ERROR:** {e}\n")
             print(f"[FAIL] {fname} :: {label} -> {e}")
 
-with open(OUT_PATH, "w") as fh:
-    fh.write("# SQL Analysis — Captured Query Results\n")
-    fh.write("\nEvery result below is real output from running the queries in this folder ")
-    fh.write("against the Phase 9 clean dataset (DuckDB). Nothing here is hand-typed.\n")
-    fh.write("\n".join(report_lines))
+OUT_PATH.write_text(
+    "# SQL Analysis — Captured Query Results\n"
+    "\nEvery result below is real output from running the queries in this folder "
+    "against the Phase 9 clean dataset (DuckDB). Nothing here is hand-typed.\n"
+    + "\n".join(report_lines),
+    encoding="utf-8",
+)
 
 print(f"\nWrote {OUT_PATH}")
 con.close()

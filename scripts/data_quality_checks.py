@@ -6,8 +6,10 @@ python3 data_quality_checks.py
 """
 
 import pandas as pd
+from pathlib import Path
 
-DATA_DIR = "/home/claude/bank-transaction-failure-intelligence/data"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
 
 txn = pd.read_csv(f"{DATA_DIR}/transactions.csv")
 acct = pd.read_csv(f"{DATA_DIR}/accounts.csv")

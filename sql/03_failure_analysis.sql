@@ -82,7 +82,8 @@ SELECT
     ROUND(100.0 * SUM(CASE WHEN f.transaction_id IS NOT NULL THEN 1 ELSE 0 END) / COUNT(*), 2) AS rate_pct
 FROM rtp_txns r
 LEFT JOIN rtp_fail_events f ON r.transaction_id = f.transaction_id
-GROUP BY r.hour_bucket;
+GROUP BY r.hour_bucket
+ORDER BY r.hour_bucket;
 -- Result (real, run against this dataset): other_hours 0.72% vs.
 -- midday_afternoon 0.69% -- essentially flat. This is an honest NEGATIVE
 -- finding, kept rather than dropped: the stress condition only occupies 3

@@ -70,4 +70,4 @@ UNION ALL SELECT 'duplicate_event', COUNT(*) FROM exceptions_events_duplicates
 UNION ALL SELECT 'orphan_event_transaction_id', COUNT(*) FROM exceptions_events_orphan
 UNION ALL SELECT 'orphan_account_customer_id', COUNT(*) FROM exceptions_accounts_orphan
 UNION ALL SELECT 'orphan_recovery_triggering_event', COUNT(*) FROM exceptions_recovery_orphan
-ORDER BY n DESC;
+ORDER BY n DESC, issue;

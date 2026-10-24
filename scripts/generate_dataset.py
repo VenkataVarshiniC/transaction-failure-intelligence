@@ -8,6 +8,7 @@ seed for reproducibility (NFR-02). Run with: python3 generate_dataset.py
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
+from pathlib import Path
 
 SEED = 42
 rng = np.random.default_rng(SEED)
@@ -17,7 +18,9 @@ START_DATE = datetime(2026, 3, 16)  # 90 days ending ~2026-06-14, matches exampl
 N_CUSTOMERS = 12000
 N_TARGET_TXNS = 180000
 
-OUT_DIR = "/home/claude/bank-transaction-failure-intelligence/data"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+OUT_DIR = PROJECT_ROOT / "data"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Three designated "stress days" modeled on the real April 2025 UPI volume/outage
 # incident (business-case.md, Section 1). Each is a day offset into the window

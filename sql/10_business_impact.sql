@@ -151,7 +151,8 @@ SELECT
     COUNT(CASE WHEN final_status = 'recovered_success' THEN 1 END) AS already_recovered_txn_count,
     ROUND(SUM(CASE WHEN final_status = 'recovered_success' AND is_valid_amount THEN amount ELSE 0 END), 2) AS already_recovered_value
 FROM txn_by_reason
-GROUP BY reason_code;
+GROUP BY reason_code
+ORDER BY reason_code;
 
 -- Q4: Business Question -- "Repeated failure cost" (Section 18): how much
 --     failed transaction value is concentrated in customers who fail more

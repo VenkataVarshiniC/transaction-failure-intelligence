@@ -12,13 +12,14 @@ python3 clean_dataset.py
 
 import numpy as np
 import pandas as pd
-import os
+from pathlib import Path
 
-DATA_DIR = "/home/claude/bank-transaction-failure-intelligence/data"
-CLEAN_DIR = f"{DATA_DIR}/clean"
-EXC_DIR = f"{DATA_DIR}/exceptions"
-os.makedirs(CLEAN_DIR, exist_ok=True)
-os.makedirs(EXC_DIR, exist_ok=True)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
+CLEAN_DIR = DATA_DIR / "clean"
+EXC_DIR = DATA_DIR / "exceptions"
+CLEAN_DIR.mkdir(parents=True, exist_ok=True)
+EXC_DIR.mkdir(parents=True, exist_ok=True)
 
 txn = pd.read_csv(f"{DATA_DIR}/transactions.csv")
 acct = pd.read_csv(f"{DATA_DIR}/accounts.csv")
@@ -159,5 +160,6 @@ rec_clean_r = pd.read_csv(f"{CLEAN_DIR}/recovery_attempts.csv")
 print(f"  recovery_attempts.is_consistent_outcome = False: {(~rec_clean_r['is_consistent_outcome']).sum()}")
 
 print("\n=== Exceptions logged (rows removed from clean set) ===")
-for f in os.listdir(EXC_DIR):
-    print(f"  {f}: {len(pd.read_csv(f'{EXC_DIR}/{f}'))} rows")
+for path in sorted(EXC_DIR.iterdir()):
+    if path.suffix == ".csv":
+        print(f"  {path.name}: {len(pd.read_csv(path))} rows")

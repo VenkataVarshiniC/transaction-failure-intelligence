@@ -45,7 +45,7 @@ SELECT customer_id, failure_count,
        RANK() OVER (ORDER BY failure_count DESC) AS repeat_failure_rank
 FROM customer_failures
 QUALIFY repeat_failure_rank <= 15
-ORDER BY failure_count DESC;
+ORDER BY failure_count DESC, customer_id;
 
 -- Q3: Business Question -- Do failure rates differ by customer segment
 --     (retail vs. small-business, and within retail, standard vs. premium)?
