@@ -1,0 +1,5 @@
+month,transaction_count,direct_success_count,recovered_count,permanently_failed_count,pending_count,unclassified_count,not_success_count,not_success_rate_pct,valid_transaction_value_usd,failed_face_value_usd,recovered_face_value_usd
+2026-03-01,31630,29754,746,1130,0,0,1876,5.9311,6821133.65,493577.11,175956.36
+2026-04-01,60336,56725,1402,2207,0,2,3611,5.9848,12688331.76,890321.63,298465.4
+2026-05-01,61762,58076,1504,2182,0,0,3686,5.9681,12828192.75,844718.56,315932.98
+2026-06-01,26272,24764,583,889,36,0,1508,5.74,5792881.01,374995.99,126541.49

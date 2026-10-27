@@ -224,6 +224,29 @@ an AI tool — see the spec's Section 1 for why that matters for this
 project specifically). Screenshots will be added to `screenshots/` once
 built.
 
+## Financial Operations Extension
+
+The `codex/financial-operations-platform` extension adds a versioned cost
+model, recovery economics, held-out forecasting, budget variance, and an
+import-ready six-page Power BI financial dashboard package. Failed or
+recovered transaction face value is reported as exposure/throughput and is
+never treated as loss, revenue, or savings.
+
+The v1.0 modeled baseline is **$137,142.45 of 90-day OpEx** ($0.7619 per
+transaction). Twelve DuckDB management views and six reconciliation controls
+feed `data/reporting/`. The four-intervention combined case processes a
+modeled $512,437.23 of additional principal but produces **-$98,263.47** of
+direct 90-day net benefit after fee revenue, avoided costs, servicing,
+recurring costs, and implementation costs. This is a planning result, not a
+realized saving.
+
+See `docs/BASELINE_AUDIT_AND_PLAN.md`,
+`docs/FINANCIAL_OPERATIONS_MODEL.md`, and
+`docs/EXECUTIVE_FINANCIAL_REPORT.md`. Power BI Desktop was not available in
+the build environment; `dashboard/FINANCIAL_DASHBOARD_BUILD_GUIDE.md` and
+`dashboard/financial-dashboard-measures.dax` provide the reproducible build
+package, but no `.pbix` is claimed.
+
 ## Technology
 
 Python (numpy, pandas) for synthetic data generation and cleaning;

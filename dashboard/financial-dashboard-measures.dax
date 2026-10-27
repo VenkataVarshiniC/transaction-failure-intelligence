@@ -1,0 +1,112 @@
+-- Core observed metrics
+Total Transactions = SUM(transaction_performance[transaction_count])
+
+Not Success Transactions = SUM(transaction_performance[not_success_count])
+
+Not Success Rate % = DIVIDE([Not Success Transactions], [Total Transactions])
+
+Finalized Failures =
+SUM(transaction_performance[recovered_count])
+    + SUM(transaction_performance[permanently_failed_count])
+
+Recovered Transactions = SUM(transaction_performance[recovered_count])
+
+Recovery Rate % = DIVIDE([Recovered Transactions], [Finalized Failures])
+
+Failed Face Value = SUM(transaction_performance[failed_face_value_usd])
+
+Recovered Face Value = SUM(transaction_performance[recovered_face_value_usd])
+
+-- Financial operations
+Total Modeled OpEx = SUM(financial_costs[modeled_cost_usd])
+
+Variable OpEx =
+CALCULATE([Total Modeled OpEx], financial_costs[expense_class] = "variable")
+
+Recurring Fixed OpEx =
+CALCULATE([Total Modeled OpEx], financial_costs[expense_class] = "recurring_fixed")
+
+OpEx per Transaction = DIVIDE([Total Modeled OpEx], [Total Transactions])
+
+Allocated OpEx per Not Success =
+DIVIDE([Total Modeled OpEx], [Not Success Transactions])
+
+Recovery Servicing Cost =
+CALCULATE(
+    [Total Modeled OpEx],
+    financial_costs[line_item] IN {
+        "Retry attempts",
+        "Manual review",
+        "Customer support handling"
+    }
+)
+
+Recovery Cost per Successful Recovery =
+DIVIDE([Recovery Servicing Cost], [Recovered Transactions])
+
+-- Budget and forecast
+Budget = SUM(budget_vs_actual[budget_usd])
+
+Modeled Actual = SUM(budget_vs_actual[modeled_actual_usd])
+
+Favorable Variance = [Budget] - [Modeled Actual]
+
+Favorable Variance % = DIVIDE([Favorable Variance], [Budget])
+
+Forecast Transactions = SUM(forecast_monthly[transaction_volume])
+
+Forecast Failures = SUM(forecast_monthly[failure_volume])
+
+Forecast Recoveries = SUM(forecast_monthly[recovery_volume])
+
+Forecast OpEx = SUM(forecast_monthly[total_opex_usd])
+
+Forecast Failure Rate % = DIVIDE([Forecast Failures], [Forecast Transactions])
+
+-- Scenario economics; scenario_comparison remains disconnected
+Selected Scenario = SELECTEDVALUE(scenario_comparison[scenario_name], "Select one scenario")
+
+Selected Incremental Successes =
+SELECTEDVALUE(scenario_comparison[incremental_successful_transactions])
+
+Selected Incremental Processed Value =
+SELECTEDVALUE(scenario_comparison[incremental_processed_value_usd])
+
+Selected Incremental Fee Revenue =
+SELECTEDVALUE(scenario_comparison[incremental_fee_revenue_usd])
+
+Selected Avoided OpEx =
+SELECTEDVALUE(scenario_comparison[avoided_operational_cost_usd])
+
+Selected Additional Cost =
+SELECTEDVALUE(scenario_comparison[additional_cost_usd])
+
+Selected Net Financial Benefit =
+SELECTEDVALUE(scenario_comparison[net_financial_benefit_usd])
+
+Selected ROI % = DIVIDE(SELECTEDVALUE(scenario_comparison[roi_pct]), 100)
+
+Selected Break-Even Conversion % =
+DIVIDE(SELECTEDVALUE(scenario_comparison[break_even_conversion_rate_pct]), 100)
+
+Intervention Priority Rank =
+RANKX(
+    FILTER(ALL(scenario_comparison), scenario_comparison[scenario_id] <> "A"),
+    scenario_comparison[net_financial_benefit_usd],
+    ,
+    DESC,
+    Dense
+)
+
+-- Validation and contribution
+Reconciliation Pass Count =
+CALCULATE(COUNTROWS(source_to_report_reconciliation), source_to_report_reconciliation[reconciles] = TRUE())
+
+Reconciliation Check Count = COUNTROWS(source_to_report_reconciliation)
+
+Channel Contribution =
+SUM(payment_channel_profitability[modeled_contribution_usd])
+
+Segment Modeled Contribution =
+SUM(customer_segment_financial_impact[modeled_fee_revenue_usd])
+    - SUM(customer_segment_financial_impact[modeled_operational_cost_usd])

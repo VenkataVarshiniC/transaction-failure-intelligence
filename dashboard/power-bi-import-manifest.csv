@@ -1,0 +1,16 @@
+file,table_name,grain,purpose
+data/reporting/transaction_performance.csv,transaction_performance,month,Observed volume status and exposure KPIs
+data/reporting/failed_transaction_exposure.csv,failed_transaction_exposure,failed transaction,Reason channel rail and segment drill-through
+data/reporting/recovery_performance.csv,recovery_performance,month reason track,Recovery analysis
+data/reporting/financial_costs.csv,financial_costs,month cost line,OpEx detail
+data/reporting/monthly_opex.csv,monthly_opex,month,Monthly OpEx overview
+data/reporting/financial_kpis.csv,financial_kpis,model version total,Validated cost KPIs
+data/reporting/intervention_cost_by_failure_category.csv,intervention_cost_by_failure_category,failure category,Intervention cost drivers
+data/reporting/net_recovery_benefit.csv,net_recovery_benefit,intervention,Recovery economics
+data/reporting/customer_segment_financial_impact.csv,customer_segment_financial_impact,customer segment,Segment cost and exposure
+data/reporting/payment_channel_profitability.csv,payment_channel_profitability,payment channel,Modeled channel contribution
+data/reporting/budget_vs_actual.csv,budget_vs_actual,month cost category,Budget variance
+data/reporting/scenario_comparison.csv,scenario_comparison,scenario,Executive scenario comparison
+data/reporting/forecast_monthly.csv,forecast_monthly,forecast month,Future volume and OpEx projection
+data/reporting/forecast_validation.csv,forecast_validation,target model,Holdout model comparison
+data/reporting/source_to_report_reconciliation.csv,source_to_report_reconciliation,reconciliation check,Control evidence

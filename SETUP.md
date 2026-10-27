@@ -101,10 +101,22 @@ screenshots/            Placeholder for Power BI screenshots once built
    measures needed. Import from `data/clean/*.csv` plus the two extra
    files in `dashboard/`.
 
+9. **Build the financial operations platform** after installing the pinned
+   dependencies:
+   ```bash
+   python scripts/run_financial_pipeline.py
+   python -m unittest discover -s tests -v
+   ```
+   This rebuilds DuckDB, creates the held-out forecast, loads versioned
+   financial assumptions, creates the financial reporting views, and exports
+   Power BI-ready files to `data/reporting/`. See
+   `dashboard/FINANCIAL_DASHBOARD_BUILD_GUIDE.md` for the six-page financial
+   dashboard and `dashboard/financial-dashboard-measures.dax` for measures.
+
 ## Where things stand
 
-Phases 1-17 are complete (business case through the final case study in
-this `README.md`). Remaining: Phase 15's actual `.pbix` build (spec is
-done, the build itself is a manual Power BI Desktop exercise), Phase 18
-(polish the GitHub repo structure and push it), Phase 19 (resume
-bullets), and Phase 20 (interview preparation).
+Phases 1-17 and the financial-operations extension are complete in source,
+SQL, reporting extracts, tests, and documentation. The actual `.pbix` remains
+incomplete because Power BI Desktop was unavailable in the build environment;
+the import manifest, DAX, expected totals, and build/verification instructions
+are complete. No push or merge has been performed.
