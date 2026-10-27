@@ -1,14 +1,5 @@
 # Bank Transaction Failure Intelligence
 
-*End-to-end Business Analyst / Data Analyst portfolio project — a
-simulated digital bank's transaction-failure and recovery problem, worked
-from business case through SQL analysis, root-cause investigation,
-financial impact modeling, scenario simulation, and a Power BI dashboard
-design. Every figure in this document is either directly observed from
-the dataset or explicitly labeled as an estimate or scenario assumption
-— none is invented, and no part of this data or these figures represents
-a real bank, real customers, or real financial results.*
-
 ## Executive Summary
 
 Kestrel Bank, a fictional digital-only retail and small-business bank,
