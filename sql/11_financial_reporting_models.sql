@@ -519,11 +519,11 @@ FROM vw_net_recovery_benefit
 UNION ALL
 SELECT
     'E', 'Combined Strategy',
-    SUM(incremental_successful_transactions), SUM(incremental_processed_value_usd),
-    SUM(incremental_fee_revenue_usd), SUM(avoided_operational_cost_usd),
-    SUM(additional_retry_cost_usd + additional_servicing_cost_usd + implementation_cost_usd + analysis_window_recurring_cost_usd),
-    SUM(net_financial_benefit_usd),
-    100.0 * SUM(net_financial_benefit_usd) / NULLIF(SUM(additional_retry_cost_usd + additional_servicing_cost_usd + implementation_cost_usd + analysis_window_recurring_cost_usd), 0),
+    ROUND(SUM(incremental_successful_transactions), 2), ROUND(SUM(incremental_processed_value_usd), 2),
+    ROUND(SUM(incremental_fee_revenue_usd), 2), ROUND(SUM(avoided_operational_cost_usd), 2),
+    ROUND(SUM(additional_retry_cost_usd + additional_servicing_cost_usd + implementation_cost_usd + analysis_window_recurring_cost_usd), 2),
+    ROUND(SUM(net_financial_benefit_usd), 2),
+    ROUND(100.0 * SUM(net_financial_benefit_usd) / NULLIF(SUM(additional_retry_cost_usd + additional_servicing_cost_usd + implementation_cost_usd + analysis_window_recurring_cost_usd), 0), 2),
     NULL, 'Mixed'
 FROM vw_net_recovery_benefit;
 

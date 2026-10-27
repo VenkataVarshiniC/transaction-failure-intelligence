@@ -58,7 +58,10 @@ def main() -> None:
 
     for output_name, view_name in EXPORTS.items():
         output_path = REPORTING_DIR / f"{output_name}.csv"
-        con.execute(f"SELECT * FROM {view_name}").fetchdf().to_csv(output_path, index=False)
+        # SQL views do not guarantee row order. Sorting on every projected
+        # column keeps committed reporting extracts byte-reproducible across
+        # DuckDB executions without changing their grain or calculations.
+        con.execute(f"SELECT * FROM {view_name} ORDER BY ALL").fetchdf().to_csv(output_path, index=False)
         count = con.execute(f"SELECT COUNT(*) FROM {view_name}").fetchone()[0]
         print(f"[OK] {view_name}: {count} rows -> {output_path.relative_to(PROJECT_ROOT)}")
 

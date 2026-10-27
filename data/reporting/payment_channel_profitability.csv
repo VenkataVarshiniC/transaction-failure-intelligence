@@ -1,5 +1,5 @@
 channel_name,transaction_count,failed_transaction_count,failed_face_value_usd,modeled_fee_revenue_usd,modeled_operational_cost_usd,modeled_contribution_usd,profitability_scope
-pos_atm,18772,1138,195901.3,10272.27,13181.62,-2909.35,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"
-web,38777,2343,766015.37,35070.15,32139.24,2930.9,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"
 api,10066,672,628986.98,29843.32,15959.1,13884.22,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"
 mobile_app,112385,6528,1012709.64,52367.64,75862.48,-23494.83,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"
+pos_atm,18772,1138,195901.3,10272.27,13181.62,-2909.35,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"
+web,38777,2343,766015.37,35070.15,32139.24,2930.9,"Modeled contribution only; excludes credit losses, interchange detail, deposits, and capital costs"

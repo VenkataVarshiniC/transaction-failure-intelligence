@@ -1,7 +1,7 @@
 check_name,source_value,report_value,difference,reconciles
+combined_scenario_net_benefit_usd,-98263.47,-98263.47,0.0,True
+failed_face_value_usd,2603613.29,2603613.29,0.0,True
+opex_detail_to_monthly_usd,137142.45,137142.45,0.0,True
+recovery_attempt_rows,7601.0,7601.0,0.0,True
 transaction_rows,180000.0,180000.0,0.0,True
 valid_transaction_value_usd,38130539.17,38130539.17,0.0,True
-failed_face_value_usd,2603613.29,2603613.29,0.0,True
-recovery_attempt_rows,7601.0,7601.0,0.0,True
-opex_detail_to_monthly_usd,137142.45,137142.45,0.0,True
-combined_scenario_net_benefit_usd,-98263.47,-98263.47,0.0,True

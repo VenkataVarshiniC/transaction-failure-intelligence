@@ -1,21 +1,21 @@
 month,cost_category,budget_usd,modeled_actual_usd,favorable_variance_usd,favorable_variance_pct,budget_version,source_type
-2026-05-01,Notification and Failure Operations,1500,936.41,563.59,37.57,v1.0,planning_assumption
 2026-03-01,Customer Intervention,1600,1381.25,218.75,13.67,v1.0,planning_assumption
-2026-03-01,Recurring Fixed,9500,9032.25,467.75,4.92,v1.0,planning_assumption
-2026-04-01,Recurring Fixed,17500,17500.0,0.0,0.0,v1.0,planning_assumption
-2026-05-01,Recurring Fixed,17500,17500.0,0.0,0.0,v1.0,planning_assumption
-2026-06-01,Notification and Failure Operations,700,390.84,309.16,44.17,v1.0,planning_assumption
-2026-06-01,Recurring Fixed,7600,7583.33,16.67,0.22,v1.0,planning_assumption
-2026-04-01,Notification and Failure Operations,1500,916.01,583.99,38.93,v1.0,planning_assumption
+2026-03-01,Notification and Failure Operations,800,478.16,321.84,40.23,v1.0,planning_assumption
 2026-03-01,Platform and Processing,10500,10718.67,-218.67,-2.08,v1.0,planning_assumption
 2026-03-01,Recovery and Manual Review,4800,2666.56,2133.44,44.45,v1.0,planning_assumption
-2026-05-01,Platform and Processing,20000,20452.12,-452.12,-2.26,v1.0,planning_assumption
+2026-03-01,Recurring Fixed,9500,9032.25,467.75,4.92,v1.0,planning_assumption
 2026-04-01,Customer Intervention,3200,2603.25,596.75,18.65,v1.0,planning_assumption
+2026-04-01,Notification and Failure Operations,1500,916.01,583.99,38.93,v1.0,planning_assumption
+2026-04-01,Platform and Processing,20000,20070.97,-70.97,-0.35,v1.0,planning_assumption
+2026-04-01,Recovery and Manual Review,9000,4956.7,4043.3,44.93,v1.0,planning_assumption
+2026-04-01,Recurring Fixed,17500,17500.0,0.0,0.0,v1.0,planning_assumption
+2026-05-01,Customer Intervention,3200,2762.5,437.5,13.67,v1.0,planning_assumption
+2026-05-01,Notification and Failure Operations,1500,936.41,563.59,37.57,v1.0,planning_assumption
+2026-05-01,Platform and Processing,20000,20452.12,-452.12,-2.26,v1.0,planning_assumption
 2026-05-01,Recovery and Manual Review,9000,5020.76,3979.24,44.21,v1.0,planning_assumption
+2026-05-01,Recurring Fixed,17500,17500.0,0.0,0.0,v1.0,planning_assumption
 2026-06-01,Customer Intervention,1400,1111.5,288.5,20.61,v1.0,planning_assumption
+2026-06-01,Notification and Failure Operations,700,390.84,309.16,44.17,v1.0,planning_assumption
 2026-06-01,Platform and Processing,8500,9075.15,-575.15,-6.77,v1.0,planning_assumption
 2026-06-01,Recovery and Manual Review,3800,1986.02,1813.98,47.74,v1.0,planning_assumption
-2026-03-01,Notification and Failure Operations,800,478.16,321.84,40.23,v1.0,planning_assumption
-2026-04-01,Platform and Processing,20000,20070.97,-70.97,-0.35,v1.0,planning_assumption
-2026-05-01,Customer Intervention,3200,2762.5,437.5,13.67,v1.0,planning_assumption
-2026-04-01,Recovery and Manual Review,9000,4956.7,4043.3,44.93,v1.0,planning_assumption
+2026-06-01,Recurring Fixed,7600,7583.33,16.67,0.22,v1.0,planning_assumption

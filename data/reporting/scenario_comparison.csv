@@ -1,7 +1,7 @@
 scenario_id,scenario_name,incremental_successful_transactions,incremental_processed_value_usd,incremental_fee_revenue_usd,avoided_operational_cost_usd,additional_cost_usd,net_financial_benefit_usd,roi_pct,break_even_conversion_rate_pct,confidence
 A,No Action,0.0,0.0,0.0,0.0,0.0,0.0,,,Observed baseline comparator
-D,Stale-Read Engineering Fix,375.4,80460.03,281.61,48.05,19438.36,-19108.7,-98.3,3856.29,High
 B,Automated Retry - Issuer Declines,584.8,146696.61,513.44,950.3,19593.75,-18130.01,-92.53,607.03,Medium
 C,Proactive Low-Balance Nudge,144.0,35478.21,124.17,93.6,19940.74,-19722.96,-98.91,1598.34,Low
+D,Stale-Read Engineering Fix,375.4,80460.03,281.61,48.05,19438.36,-19108.7,-98.3,3856.29,High
+E,Combined Strategy,1706.2,512437.23,1793.53,2363.68,102420.68,-98263.47,-95.94,,Mixed
 F,Risk Review SLA and Threshold Pilot,602.0,249802.38,874.31,1271.73,43447.83,-41301.8,-95.06,1463.23,Medium
-E,Combined Strategy,1706.1999999999998,512437.23,1793.53,2363.68,102420.68000000001,-98263.47,-95.94104432815716,,Mixed

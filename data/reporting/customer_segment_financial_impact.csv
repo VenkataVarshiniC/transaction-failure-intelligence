@@ -1,5 +1,5 @@
 customer_segment,transaction_count,failed_transaction_count,failed_face_value_usd,modeled_fee_revenue_usd,modeled_operational_cost_usd
 Retail-Premium,33593,2025,266418.21,13133.97,22087.23
-Small-Business,18766,1280,1410199.77,64049.11,32386.3
 Retail-Standard,127527,7370,924453.42,50316.37,82586.05
+Small-Business,18766,1280,1410199.77,64049.11,32386.3
 Unattributed,114,6,2541.89,53.93,82.86
