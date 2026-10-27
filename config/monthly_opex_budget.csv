@@ -1,0 +1,21 @@
+budget_version,month,cost_category,budget_usd,source_type
+v1.0,2026-03-01,Platform and Processing,10500,planning_assumption
+v1.0,2026-03-01,Recovery and Manual Review,4800,planning_assumption
+v1.0,2026-03-01,Customer Intervention,1600,planning_assumption
+v1.0,2026-03-01,Notification and Failure Operations,800,planning_assumption
+v1.0,2026-03-01,Recurring Fixed,9500,planning_assumption
+v1.0,2026-04-01,Platform and Processing,20000,planning_assumption
+v1.0,2026-04-01,Recovery and Manual Review,9000,planning_assumption
+v1.0,2026-04-01,Customer Intervention,3200,planning_assumption
+v1.0,2026-04-01,Notification and Failure Operations,1500,planning_assumption
+v1.0,2026-04-01,Recurring Fixed,17500,planning_assumption
+v1.0,2026-05-01,Platform and Processing,20000,planning_assumption
+v1.0,2026-05-01,Recovery and Manual Review,9000,planning_assumption
+v1.0,2026-05-01,Customer Intervention,3200,planning_assumption
+v1.0,2026-05-01,Notification and Failure Operations,1500,planning_assumption
+v1.0,2026-05-01,Recurring Fixed,17500,planning_assumption
+v1.0,2026-06-01,Platform and Processing,8500,planning_assumption
+v1.0,2026-06-01,Recovery and Manual Review,3800,planning_assumption
+v1.0,2026-06-01,Customer Intervention,1400,planning_assumption
+v1.0,2026-06-01,Notification and Failure Operations,700,planning_assumption
+v1.0,2026-06-01,Recurring Fixed,7600,planning_assumption

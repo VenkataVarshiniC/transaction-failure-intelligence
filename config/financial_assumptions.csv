@@ -1,0 +1,13 @@
+assumption_version,effective_date,assumption_id,description,value,unit,cost_class,frequency,source_type
+v1.0,2026-06-14,platform_cost_per_transaction,Core transaction platform usage,0.015,USD_per_transaction,variable,per_event,modeled_assumption
+v1.0,2026-06-14,payment_processing_fixed_per_settled_transaction,Fixed processor charge on settled transactions,0.08,USD_per_settled_transaction,variable,per_event,modeled_assumption
+v1.0,2026-06-14,payment_processing_bps,Processor charge on settled value,12,basis_points,variable,per_event,modeled_assumption
+v1.0,2026-06-14,retry_cost_per_attempt,Infrastructure and rail cost per retry attempt,0.04,USD_per_attempt,variable,per_event,modeled_assumption
+v1.0,2026-06-14,customer_support_cost_per_intervention_attempt,Support handling cost for customer-intervention recovery,3.25,USD_per_attempt,variable,per_event,modeled_assumption
+v1.0,2026-06-14,manual_review_cost_per_attempt,Operations review cost for monitored recovery,6.50,USD_per_attempt,variable,per_event,modeled_assumption
+v1.0,2026-06-14,notification_cost_per_notification,Outbound notification delivery cost,0.008,USD_per_notification,variable,per_event,modeled_assumption
+v1.0,2026-06-14,failure_investigation_cost_per_failure,Automated triage and investigation allocation,0.12,USD_per_failure,variable,per_event,modeled_assumption
+v1.0,2026-06-14,engineering_remediation_monthly,Recurring engineering reliability allocation,9000,USD_per_month,recurring_fixed,monthly,modeled_assumption
+v1.0,2026-06-14,operations_platform_monthly,Recurring operations platform allocation,6000,USD_per_month,recurring_fixed,monthly,modeled_assumption
+v1.0,2026-06-14,other_operations_monthly,Other recurring operations allocation,2500,USD_per_month,recurring_fixed,monthly,modeled_assumption
+v1.0,2026-06-14,incremental_fee_revenue_bps,Modeled fee revenue on incremental settled value,35,basis_points,modeled_revenue,per_event,modeled_assumption

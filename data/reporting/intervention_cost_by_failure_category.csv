@@ -1,0 +1,7 @@
+failure_category,failure_transactions,recovery_attempts,modeled_intervention_cost_usd,modeled_cost_per_failed_transaction_usd
+Policy,213,0,27.26,0.128
+Unclassified,18,16,28.94,1.608
+External Dependency,2356,1002,1446.65,0.614
+Risk,2038,2031,13543.6,6.6455
+Technology,2670,2136,427.2,0.16
+Process,3382,2416,8381.54,2.4783

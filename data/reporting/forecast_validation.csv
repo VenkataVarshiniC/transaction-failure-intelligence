@@ -1,0 +1,7 @@
+target,model,train_start,train_end,holdout_start,holdout_end,holdout_days,mae,rmse,mape_pct,selected,evidence_scope
+transaction_volume,weekday_seasonal_naive,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,49.2597,87.8447,2.3146,True,synthetic_14_day_holdout
+transaction_volume,linear_trend_weekday,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,49.5555,88.3258,2.3275,False,synthetic_14_day_holdout
+failure_volume,weekday_seasonal_naive,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,7.2662,10.1037,6.4241,False,synthetic_14_day_holdout
+failure_volume,linear_trend_weekday,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,6.8389,9.7196,5.9962,True,synthetic_14_day_holdout
+recovery_volume,weekday_seasonal_naive,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,7.8649,10.4993,20.7582,True,synthetic_14_day_holdout
+recovery_volume,linear_trend_weekday,2026-03-16,2026-05-30,2026-05-31,2026-06-13,14,7.9991,10.6611,21.3458,False,synthetic_14_day_holdout

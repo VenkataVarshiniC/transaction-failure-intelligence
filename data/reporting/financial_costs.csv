@@ -1,0 +1,45 @@
+month,expense_class,cost_category,line_item,driver_quantity,unit_rate,modeled_cost_usd
+2026-03-01,variable,Platform and Processing,Core transaction platform,31630.0,0.015,474.45
+2026-04-01,variable,Platform and Processing,Core transaction platform,60336.0,0.015,905.04
+2026-05-01,variable,Platform and Processing,Core transaction platform,61762.0,0.015,926.43
+2026-06-01,variable,Platform and Processing,Core transaction platform,26272.0,0.015,394.08
+2026-03-01,variable,Platform and Processing,Fixed payment processing,30500.0,0.08,2440.0
+2026-04-01,variable,Platform and Processing,Fixed payment processing,58127.0,0.08,4650.16
+2026-05-01,variable,Platform and Processing,Fixed payment processing,59580.0,0.08,4766.4
+2026-06-01,variable,Platform and Processing,Fixed payment processing,25347.0,0.08,2027.76
+2026-03-01,variable,Platform and Processing,Value-based payment processing,6503512.9000000255,0.0012,7804.22
+2026-04-01,variable,Platform and Processing,Value-based payment processing,12096475.530000042,0.0012,14515.77
+2026-05-01,variable,Platform and Processing,Value-based payment processing,12299407.169999987,0.0012,14759.29
+2026-06-01,variable,Platform and Processing,Value-based payment processing,5544426.509999989,0.0012,6653.31
+2026-03-01,variable,Recovery and Manual Review,Retry attempts,1339.0,0.04,53.56
+2026-04-01,variable,Recovery and Manual Review,Retry attempts,2530.0,0.04,101.2
+2026-05-01,variable,Recovery and Manual Review,Retry attempts,2669.0,0.04,106.76
+2026-06-01,variable,Recovery and Manual Review,Retry attempts,1063.0,0.04,42.52
+2026-03-01,variable,Customer Intervention,Customer support handling,425.0,3.25,1381.25
+2026-04-01,variable,Customer Intervention,Customer support handling,801.0,3.25,2603.25
+2026-05-01,variable,Customer Intervention,Customer support handling,850.0,3.25,2762.5
+2026-06-01,variable,Customer Intervention,Customer support handling,342.0,3.25,1111.5
+2026-03-01,variable,Recovery and Manual Review,Manual review,402.0,6.5,2613.0
+2026-04-01,variable,Recovery and Manual Review,Manual review,747.0,6.5,4855.5
+2026-05-01,variable,Recovery and Manual Review,Manual review,756.0,6.5,4914.0
+2026-06-01,variable,Recovery and Manual Review,Manual review,299.0,6.5,1943.5
+2026-03-01,variable,Notification and Failure Operations,Customer notifications,31630.0,0.008,253.04
+2026-04-01,variable,Notification and Failure Operations,Customer notifications,60336.0,0.008,482.69
+2026-05-01,variable,Notification and Failure Operations,Customer notifications,61761.0,0.008,494.09
+2026-06-01,variable,Notification and Failure Operations,Customer notifications,26235.0,0.008,209.88
+2026-03-01,variable,Notification and Failure Operations,Failure investigation,1876.0,0.12,225.12
+2026-04-01,variable,Notification and Failure Operations,Failure investigation,3611.0,0.12,433.32
+2026-05-01,variable,Notification and Failure Operations,Failure investigation,3686.0,0.12,442.32
+2026-06-01,variable,Notification and Failure Operations,Failure investigation,1508.0,0.12,180.96
+2026-03-01,recurring_fixed,Recurring Fixed,Engineering remediation allocation,16.0,290.3225806451613,4645.16
+2026-04-01,recurring_fixed,Recurring Fixed,Engineering remediation allocation,30.0,300.0,9000.0
+2026-05-01,recurring_fixed,Recurring Fixed,Engineering remediation allocation,31.0,290.3225806451613,9000.0
+2026-06-01,recurring_fixed,Recurring Fixed,Engineering remediation allocation,13.0,300.0,3900.0
+2026-03-01,recurring_fixed,Recurring Fixed,Operations platform allocation,16.0,193.5483870967742,3096.77
+2026-04-01,recurring_fixed,Recurring Fixed,Operations platform allocation,30.0,200.0,6000.0
+2026-05-01,recurring_fixed,Recurring Fixed,Operations platform allocation,31.0,193.5483870967742,6000.0
+2026-06-01,recurring_fixed,Recurring Fixed,Operations platform allocation,13.0,200.0,2600.0
+2026-03-01,recurring_fixed,Recurring Fixed,Other operations allocation,16.0,80.64516129032258,1290.32
+2026-04-01,recurring_fixed,Recurring Fixed,Other operations allocation,30.0,83.33333333333333,2500.0
+2026-05-01,recurring_fixed,Recurring Fixed,Other operations allocation,31.0,80.64516129032258,2500.0
+2026-06-01,recurring_fixed,Recurring Fixed,Other operations allocation,13.0,83.33333333333333,1083.33

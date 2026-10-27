@@ -1,0 +1,2 @@
+total_modeled_opex_usd,variable_opex_usd,recurring_fixed_opex_usd,opex_per_transaction_usd,allocated_opex_per_not_success_transaction_usd,failure_management_cost_per_not_success_transaction_usd,recovery_cost_per_successful_recovery_usd,transaction_count,not_success_transactions,recovered_transactions,cost_scope
+137142.45,85526.87,51615.58,0.7619,12.8399,2.2255,5.3102,180000,10681,4235,Modeled costs only; failed face value is excluded from OpEx
